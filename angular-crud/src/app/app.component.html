@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<nav>
+  <a class="button" routerLink="/product-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Product List</a> |
+  <a class="button" routerLink="/product-add" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Add Product</a>
+  <a class="button" *ngIf="productId !== undefined" [routerLink]="['/product-edit', productId]" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Edit Product</a>
+  <a class="button" *ngIf="productId !== undefined" routerLink="/product-delete/{{ productId }}" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Delete Product</a>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "name": "Vasos",
+      "price": "5"
+    },
+    {
+      "id": "1",
+      "name": "Platos",
+      "price": "10"
+    },
+    {
+      "id": "2",
+      "name": "Cuchara",
+      "price": "2"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<h2>Editar Producto</h2>
+<form (ngSubmit) = "updateProduct()">
+    <label for = "name">Nombre</label>
+    <input id = "name" [(ngModel)] = "product.name" name = "name" required>
+    <label for = "price">Precio</label>
+    <input id = "price" [(ngModel)] = "product.price" name = "price" required>
+    <button type = "submit">Actualizar</button>
+</form>

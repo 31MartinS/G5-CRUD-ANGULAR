@@ -1,0 +1,29 @@
+<h2>Product List</h2>
+<div class="page">
+  <div class="page-header">
+    <button class="button activebutton" routerLink="/product-add">Agregar Nuevo</button>
+  </div>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Acción</th>
+          <th>ID Producto</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td class="actions">
+            <button (click)="editProduct(product.id)" class="button activebutton"><i class="fas fa-edit"></i> Editar</button>
+            <button (click)="deleteProduct(product.id)" class="button activebutton"><i class="fas fa-trash"></i> Eliminar</button>
+          </td>
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
